@@ -1,0 +1,143 @@
+:root{
+    --colorPrimario: #F086F8;
+    --colorSecundario: #900c3f;
+    --colorTerciario: #6c00ff;
+    --fuentePrimaria: Arial;
+    --fuenteSecundaria: 'Times New Roman', Times, serif;
+    --tamanioInicial:18px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style-type:none;
+}
+.title{
+    font-family: var(--fuentePrimaria);
+    text-align: center;
+    font-size: 40px;
+    color: var(--colorPrimario);
+}
+
+/* #900c3f */
+
+/********** MAIN ************/
+
+.main{
+    padding: 16px;
+
+}
+/** section **/
+.section{
+    width: 650px;
+    height: 850px;
+    float: left;
+}
+.subtitle{
+    color: var(--colorPrimario);
+    font-family: var(--fuentePrimaria);
+    text-decoration: underline;
+}
+.article{
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 16px;
+}
+
+.subtitle-2{
+    color: var(--colorPrimario);
+    font-family: var(--fuentePrimaria);
+    margin-bottom: 5px;
+    position: relative;
+    display: none;
+}
+
+.subtitle-2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--colorPrimario);
+    transition: all 1s ease;
+}
+
+.subtitle-2:hover::before{
+    width: 100%;
+}
+
+/* a:visited{
+    color: magenta;
+}
+a:active{
+    color: lime;
+}
+ */
+
+.article-image{
+    width: 300px;
+    float: left;
+    margin-right: 15px;
+}
+.article-text{
+    font-family: var(--fuenteSecundaria);
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.article-text::first-letter{
+    color: #dc3545;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.article-text::first-line{
+    color: var(--colorPrimario);
+}
+
+.article-text::selection{
+    background-color: var(--colorPrimario);
+    color: #f8f9fa;
+}
+
+.article-link{
+    color: #f8f9fa;
+    background-color: var(--colorPrimario);
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+.article-link:hover{
+    background-color: #288bf6;
+}
+
+
+/** aside **/
+.aside{
+    width: 350px;
+    height: 350px;
+    float: right;
+}
+
+.aside-list:last-child{
+    background-color: var(--colorPrimario);
+}
+.aside-list:last-child a{
+    color: #f8f9fa;
+}
+
+.limpiar{
+    clear: both;
+}
+
+
+a{
+    color: var(--colorPrimario)
+}
