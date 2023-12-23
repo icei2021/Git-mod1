@@ -30,12 +30,10 @@
 
 .main{
     padding: 16px;
-
 }
 /** section **/
 .section{
     width: 750px;
-    height: 850px;
     float: left;
 }
 .subtitle{
@@ -127,8 +125,14 @@ a:active{
 .limpiar{
     clear: both;
 }
-
-
 a{
     color: var(--colorPrimario)
+}
+
+/**** Footer ****/
+.footer{
+    background-color: var(--colorPrimario);
+    color: var(--colorBlanco);
+    padding: 10px 0;
+    text-align: center;
 }
